@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+import medhacks_app.views as views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('patient/', views.patient_view),
+    path('patient/<int:patient_id>/', views.patient_view, name="patient_with_id")
 ]
