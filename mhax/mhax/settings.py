@@ -123,9 +123,5 @@ STATIC_URL = '/static/'
 
 ### 1UpHealth Info
 
-CLIENT_ID = 'b28ff1070b5f48b08380d5f6da21fe79'
-CLIENT_SECRET = '4WLQ7K3H55A8FaLe1mOtS5W3n7vVLnRx'
-
-TOKEN_URL = 'https://api.1up.health/fhir/oauth2/token'
-API_URL = 'https://api.1up.health/fhir'
-SCOPE = 'user/*.*'
+import django_heroku
+django_heroku.settings(locals())
