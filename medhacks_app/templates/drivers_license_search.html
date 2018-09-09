@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+    <center>
+        <br>
+        <h1> Drivers License Search </h1>
+        <p> Search for an individual's medical history with their driver's license ID</p>
+
+        <form method="post">
+        {% csrf_token %}
+        <table class="table">
+          {{ form.as_table }}
+        </table>
+
+        <br>
+
+       <input class = "btn" type="submit">
+     </form>
+        <br>
+        <a class ="btn" href="{% url 'logout' %}"> Log Out </a>
+    </center>
+</body>
+</html>

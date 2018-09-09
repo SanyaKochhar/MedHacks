@@ -8,7 +8,20 @@ from django.urls import reverse, reverse_lazy, resolve
 from django.shortcuts import HttpResponseRedirect, HttpResponse
 
 from medhacks_app.data import DATA
+from medhacks_app.forms import DLForm
 # Create your views here.
+
+
+@login_required
+def search_drivers_license(request):
+    if request.method == 'POST':
+        form = DLForm(request.POST)
+        if form.is_valid():
+            drivers_license = form.cleaned_data.get('drivers_license')
+            return redirect(patient_view, patient_id=drivers_license)
+    else:
+        form = DLForm()
+    return render(request, 'drivers_license_search.html', {'form': form})
 
 
 @login_required
