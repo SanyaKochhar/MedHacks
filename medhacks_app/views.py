@@ -27,7 +27,6 @@ def logout_view(request):
     return HttpResponseRedirect(reverse_lazy('login'))
 
 
-
 def signup(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
