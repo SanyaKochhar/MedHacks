@@ -16,9 +16,17 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 import medhacks_app.views as views
+from django.contrib.auth import views as auth_views
+from django.urls import reverse_lazy
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('patient/', views.patient_view),
-    path('patient/<int:patient_id>/', views.patient_view, name="patient_with_id")
+    path('patient/', views.patient_view, name="patient"),
+    path('patient/<int:patient_id>/', views.patient_view, name="patient_with_id"),
+    path('login/', auth_views.LoginView.as_view(template_name='login.html', redirect_field_name=reverse_lazy('patient')), name='login'),
+    path('logout/', views.logout_view, name="logout"),
+    path('signup/', views.signup, name="signup"),
+    path(r'^.*/$', views.patient_view, name="catchall")
 ]
+
