@@ -7,7 +7,7 @@ from django.contrib.auth import logout
 from django.urls import reverse, reverse_lazy, resolve
 from django.shortcuts import HttpResponseRedirect
 
-
+from data import DATA
 # Create your views here.
 
 
@@ -18,7 +18,8 @@ def patient_view(request, patient_id=0):
 
 
 def get_patient_info(pid):
-    return {"name": "Trishul"}
+    print("Data: {0}".format(DATA.keys()))
+    return {"Name": "Trishul"}
 
 
 def logout_view(request):
