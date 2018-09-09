@@ -2,6 +2,7 @@
 DATA = {
     "N-00001": {
         'name': "Tea Degirmenci",
+        'dob': 'December 31, 1965',
         'age': 53,
         'address': "791 Eden Drive, Richmond, VA",
         'insurance': "BlueCross BlueShield",
@@ -20,12 +21,12 @@ DATA = {
                  'details': "needed 3 stents afterwards"
              },
              {
-                 year: "-",
-                 event: "Hypertension",
-                 details: "Family history"
+                 'year': "-",
+                 'event': "Hypertension",
+                 'details': "Family history"
              }
          ],
-         contacts:
+         'contacts':
              [
                  {
                      'name': "Boban Degirmenci",
@@ -37,6 +38,7 @@ DATA = {
 
     "N-00002": {
         'name': "Eduardo Cullen Malhotra",
+        'dob': 'September 4, 1981',
         'age': 37,
         'address': "3734 Simpson Avenue, Palmyra, PA",
         'insurance': "StateFarm",
@@ -69,6 +71,7 @@ DATA = {
      },
     "N-00003": {
         'name': "Jaikrishna Iyer",
+        'dob': 'September 9, 1995',
         'age': 23,
         'address': "4909 Norman Street, Beverly Hills, CA",
         'insurance': "Aetna",

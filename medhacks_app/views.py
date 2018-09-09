@@ -5,21 +5,25 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import logout
 from django.urls import reverse, reverse_lazy, resolve
-from django.shortcuts import HttpResponseRedirect
+from django.shortcuts import HttpResponseRedirect, HttpResponse
 
-from data import DATA
+from medhacks_app.data import DATA
 # Create your views here.
 
 
 @login_required
 def patient_view(request, patient_id=0):
     patient_info = get_patient_info(patient_id)
-    return render(request, 'patientdisplay.html', {'patient': patient_info})
+    if patient_info:
+        return render(request, 'patientdisplay.html', {'patient': patient_info})
+    return HttpResponse("Drivers License Not Found")
 
 
 def get_patient_info(pid):
-    print("Data: {0}".format(DATA.keys()))
-    return {"Name": "Trishul"}
+    print(pid)
+    if pid in DATA.keys():
+        return DATA[pid]
+    return None
 
 
 def logout_view(request):
