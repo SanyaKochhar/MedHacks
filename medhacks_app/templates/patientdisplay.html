@@ -22,9 +22,8 @@
   <div class="w3-half w3-blue-grey w3-container" style="height:700px">
     <div class="w3-padding-64 w3-center">
       <h1>About Me</h1>
-      <img src="/w3images/avatar3.png" class="w3-margin w3-circle" alt="Person" style="width:50%">
       <div class="w3-left-align w3-padding-large">
-        <p>Name:</p>
+        <p>Name: {{ patient.name }}</p>
         <p>Date of Birth (Age):</p>
         <p>Address:</p>
         <p>Insurance:</p>
@@ -149,7 +148,13 @@
 
 <!-- Footer -->
 <footer class="w3-container w3-black w3-padding-16">
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <p>
+    <a href="{% url 'logout' %}"> Logout </a>
+  </p>
+  <p>
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </p>
+
 </footer>
 
 </body>
