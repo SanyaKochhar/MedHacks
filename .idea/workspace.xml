@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e23a6df-1b57-45d8-bccb-c9ebbc15a5c1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/medhacks_app/templates/patientdisplay.html" beforeDir="false" afterPath="$PROJECT_DIR$/medhacks_app/templates/patientdisplay.html" afterDir="false" />
-    </list>
+    <list default="true" id="9e23a6df-1b57-45d8-bccb-c9ebbc15a5c1" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,8 +32,8 @@
       <file leaf-file-name="patientdisplay.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/medhacks_app/templates/patientdisplay.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+            <state relative-caret-position="217">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
             </state>
           </provider>
         </entry>
@@ -341,8 +339,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/medhacks_app/templates/patientdisplay.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+        <state relative-caret-position="217">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
