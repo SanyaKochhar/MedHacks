@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9e23a6df-1b57-45d8-bccb-c9ebbc15a5c1" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/medhacks_app/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/medhacks_app/templates/drivers_license_search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/medhacks_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/medhacks_app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mhax/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mhax/urls.py" afterDir="false" />
-    </list>
+    <list default="true" id="9e23a6df-1b57-45d8-bccb-c9ebbc15a5c1" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -217,7 +211,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
